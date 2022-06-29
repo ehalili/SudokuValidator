@@ -59,8 +59,6 @@ public class Sudoku {
 
     private static boolean solveBoard(int[][] board) {
         HashSet <String> seen = new HashSet<>();
-		// I used HashSet of Strings instead of Integers, just because i contatinacted a text in add method, otherwise if i would use Integers,
-		// I MUST convert int to String using valueOf method.
         for (int i = 0; i < GRID_SIZE ; i++) {
             for (int j = 0; j < GRID_SIZE ; j++) {
                 int number = board[i][j];
